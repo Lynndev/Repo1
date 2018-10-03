@@ -1,0 +1,142 @@
+@import url("https://www.googleapis.com/css?family=Raleway:300,400,700,900");
+
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  font-family: 'Raleway',sans-serif;
+  text-align: center;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
+.container{
+  width: 95%;
+  margin: 0 auto;
+}
+/*typgrophy
+=======================*/
+h1{
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+.title{
+  font-size: 2.5rem;
+  margin-bottom: 1.5em;
+  font-weight: 900;
+  margin-top: 1em;
+}
+.title span{
+  font-weight: 300;
+  display: block;
+  font-size: .85em;
+}
+@media(min-width:60rem){
+  .title{
+    font-size: 3.7rem;
+  }
+}
+/*buttons*/
+.button{
+  display: inline-block;
+  font-size: 1.15rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-width: 2px;
+  border-style: solid;
+  padding: .5em 1.75em;
+}
+.button-accent{
+  color:#00ff6c;
+  border-color:#00ff6c;
+}
+.button-accent:hover, .button-accent:focus{
+  background: #00ff6c;
+  color: #232323;
+}
+
+@media(min-width:60rem){
+  .button{
+    font-size: 1.5rem;
+  }
+}
+/*header
+=======================*/
+header{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 1em;
+  margin: 1em;
+}
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li{
+  display: inline-block;
+  margin: 1em;
+}
+nav a{
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: .8rem;
+  padding: .5rem;
+  color: #fff;
+}
+
+nav a:hover,nav a:focus{
+  color: #ddd;
+}
+
+@media(min-width:60rem){
+  .logo{
+    float: left;
+  }
+  nav{
+    float: right;
+  }
+}
+/*home hero
+=======================*/
+.home-hero{
+  background-image: url(../img/hero-bg.jpg);
+  padding:10em 0;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+@media(min-width:60rem){
+  .home-hero{
+    height: 100vh;
+    padding-top: 35vh;
+  }
+}
+
+/*home about
+=======================*/
+.home-about-textbox{
+  background-color: #232323;
+  padding: 4em;
+  width: 100vw;
+  margin-left: -2.5%;
+  outline: 2px solid #00ff6c;
+  outline-offset: -2.5em;
+  color: #fff;
+  position: relative;
+}
+.home-about-textbox h1{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #00ff6c;
+  top: -.5em;
+  background-color: #232323;
+  padding: 0 .25em;
+
+}
